@@ -23,6 +23,7 @@ from gtts import gTTS
 
 start = time.time()
 #print(start)
+print(time.ctime)
 print("\nComeçando Pomodoro em 20 segundos...\n\nConcentre-se na sua tarefa pelos próximos 25 minutos!\n\nBom trabalho!")
 
 # Tempo do timer em segundos
@@ -61,6 +62,7 @@ engine.runAndWait()
 #print(pyttsx3.voice.Voice)
 
 #print(end - start)
+print(time.ctime)
 
 #Usando modulo gTTS
 mytext = "Bem vindo a tecnica Pomodoro! Concentre-se na sua tarefa pelos próximos 25 minutos!"
@@ -71,12 +73,14 @@ myobj = gTTS(text=mytext, lang=language, slow=False)
 myobj.save("pomodoro.mp3")
 os.system("mpv --speed=1.75  pomodoro.mp3")
 
+print(time.ctime)
 
 
 while True:
 
     #Iniciando os 25 minutos
     time.sleep(25*60) # Aqui deverá ser 25 minutos para a técnica Pomodoro
+    print(time.ctime)
 
 
     mytext = "Descanse por cinco minutos e então concentre-se novamente em sua tarefa por mais 25 minutos. Divirta-se! Ah vai se fudê.  Me deixa manca e quer que eu faça as coisa!   Desculpe estou nervosa!  Mas sou sincera, então se eu estiver nervosa vou mandar você se fuder!  Always look on the bright side of life! Pronto melhorei, estou feliz denovo! "
@@ -90,6 +94,7 @@ while True:
 
     #Descanso de 5 minutos
     time.sleep(2*60) #Tempo do video de 3 minutos mais 2 minutos de timer
+    print(time.ctime)
 
 
     mytext = "Ok, acabou a moleza, bora trabalhar por mais 25 minutos!"
