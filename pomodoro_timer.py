@@ -1,15 +1,25 @@
 # Programa timer para aplicar a técnica Pomodoro, que consiste em trabalhar focado por 25 minutos, fazer uma pausa de 5 minutos e voltar a repetir.
 
+''' Dependencias 
+sudo apt update && sudo apt install espeak ffmpeg libespeak1 
+sudo apt-get install alsa-utils
+
+Instale o ambiente virtual com:
+    python3 -m venv pomodoro
+Ative o ambiente virtual com:
+    source pomodoro/bin/activate
+Instale as bibliotecas:
+    pip install pyttsx3==2.71
+    pip install gTTS
+
+'''
+
 import time
 import pyttsx3
 
 import os
 from gtts import gTTS
 
-''' Dependencias 
-sudo apt update && sudo apt install espeak ffmpeg libespeak1 
-sudo apt-get install alsa-utils
-'''
 
 start = time.time()
 #print(start)
